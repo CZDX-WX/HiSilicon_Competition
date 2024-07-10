@@ -30,11 +30,11 @@ spring:
             max-request-size: 10MB
             enabled: true
 
-aliyun:
-    endpoint: https://oss-cn-chengdu.aliyuncs.com
-    accessKeyId: 隐秘不展示
-    accessKeySecret: 隐秘不展示
-    bucketName: 隐秘不展示
+# aliyun:
+#     endpoint: https://oss-cn-chengdu.aliyuncs.com
+#     accessKeyId: 隐秘不展示
+#     accessKeySecret: 隐秘不展示
+#     bucketName: 隐秘不展示
 
 # swagger-ui custom path
 springdoc:
