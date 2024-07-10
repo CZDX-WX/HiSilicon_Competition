@@ -1,0 +1,79 @@
+plugins {
+    alias(libs.plugins.jetbrains.kotlin.android)
+}
+apply plugin: 'com.android.application'
+//apply plugin: 'com.jakewharton.butterknife'
+android {
+    namespace 'com.czdxwx.wear'
+    compileSdk 34
+    viewBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId "com.czdxwx.wear"
+        minSdk 29
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    tasks.withType(JavaCompile).configureEach {
+        options.fork = true
+        options.forkOptions.jvmArgs += [
+                '--add-exports=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED',
+                '--add-exports=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED',
+                '--add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED']
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.legacy.support.v4
+    implementation libs.lifecycle.livedata.ktx
+    implementation libs.lifecycle.viewmodel.ktx
+    implementation libs.core.ktx
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.glide
+    implementation libs.keyboardvisibilityevent
+    implementation libs.design
+    implementation libs.google.material
+    implementation libs.recyclerview
+    implementation libs.constraintlayout
+    implementation libs.flycotablayout
+    implementation libs.card.slider
+    compileOnly libs.lombok.v11832
+    annotationProcessor libs.lombok.v11832
+    implementation libs.baserecyclerviewadapterhelper4
+    implementation libs.library
+    implementation libs.gson
+    implementation libs.volley
+    implementation libs.titlebar
+    implementation  libs.refresh.layout.kernel      //核心必须依赖
+    implementation  libs.refresh.header.classics    //经典刷新头
+    implementation  libs.refresh.header.radar       //雷达刷新头
+    implementation  libs.refresh.header.falsify     //虚拟刷新头
+    implementation  libs.refresh.header.material    //谷歌刷新头
+    implementation  libs.github.refresh.header.two.level   //二级刷新头
+    implementation  libs.github.refresh.footer.ball        //球脉冲加载
+    implementation  libs.github.refresh.footer.classics    //经典加载
+    implementation libs.material.spinner
+    implementation libs.statebutton
+}

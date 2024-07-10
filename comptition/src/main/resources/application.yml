@@ -1,0 +1,43 @@
+mybatis-plus:
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        connection-timeout: 6000
+    port: 8080
+    connection:
+        timeout: 6000
+spring:
+    application:
+        name: competition
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: 123456
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/competition?useUnicode=true&characterEncoding=utf8
+        username: root
+    devtools:
+        restart:
+            additional-paths: src/main/java
+            enabled: true
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+    servlet:
+        multipart:
+            max-file-size: 10MB
+            max-request-size: 10MB
+            enabled: true
+
+aliyun:
+    endpoint: https://oss-cn-chengdu.aliyuncs.com
+    accessKeyId: LTAI5tGDEXsW83JwBRHom14o
+    accessKeySecret: Tqv2dqVHzTeA2GLqrowGxeclQMZFF7
+    bucketName: upload-ressource
+
+# swagger-ui custom path
+springdoc:
+    swagger-ui:
+        path: /swagger-ui.html
+
