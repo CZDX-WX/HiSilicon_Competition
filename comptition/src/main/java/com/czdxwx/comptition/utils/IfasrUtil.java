@@ -14,8 +14,8 @@ import java.util.HashMap;
 public class IfasrUtil {
 
     private static final String HOST = "https://raasr.xfyun.cn";
-    private static final String appid="17d4db7a";
-    private static final String keySecret="1f3b11ba930ffd9fc336e4d2718cfcdd";
+    private static final String appid="隐秘不展示";
+    private static final String keySecret="隐秘不展示";
     private static final Gson gson = new Gson();
 
     //上传语音任务

@@ -32,9 +32,9 @@ public class WebTtsWsUtil {
 
     // 地址与鉴权信息
     private static final String HOST_URL = "https://tts-api.xfyun.cn/v2/tts";
-    private static final String APPID = "17d4db7a";
-    private static final String API_SECRET = "NTgwNjE5ZWMzZDI3YjA5NjZjN2M2Y2Fl";
-    private static final String API_KEY = "a1e34f73c7a6a4a9c0b2a9ef4f0938c2";
+    private static final String APPID = "隐秘不展示";
+    private static final String API_SECRET = "隐秘不展示";
+    private static final String API_KEY = "隐秘不展示";
     private static final String TTE = "UTF8";
     private static final String VCN = "aisxping";
     private static final Gson GSON = new Gson();

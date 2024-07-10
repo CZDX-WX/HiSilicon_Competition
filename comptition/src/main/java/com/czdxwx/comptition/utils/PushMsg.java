@@ -15,8 +15,8 @@ import java.util.Map;
 
 public class PushMsg{
 
-    public static final String MASTER_SECRET="2664d10f8bc19ebb4c9f9e93";//JPush服务器端下发的master_key
-    public static final String APP_KEY="e2e105e9c3a59d14a00fa974";//JPush服务器端下发的app_key
+    public static final String MASTER_SECRET="隐秘不展示";
+    public static final String APP_KEY="隐秘不展示";
 
     /**
      * 构建推送对象：对所有平台，所有设备，内容为 alert的通知

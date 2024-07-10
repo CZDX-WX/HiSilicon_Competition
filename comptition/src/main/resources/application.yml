@@ -13,7 +13,7 @@ spring:
         name: competition
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: 123456
+        password: 隐秘不展示
         type: com.alibaba.druid.pool.DruidDataSource
         url: jdbc:mysql://127.0.0.1:3306/competition?useUnicode=true&characterEncoding=utf8
         username: root
@@ -32,9 +32,9 @@ spring:
 
 aliyun:
     endpoint: https://oss-cn-chengdu.aliyuncs.com
-    accessKeyId: LTAI5tGDEXsW83JwBRHom14o
-    accessKeySecret: Tqv2dqVHzTeA2GLqrowGxeclQMZFF7
-    bucketName: upload-ressource
+    accessKeyId: 隐秘不展示
+    accessKeySecret: 隐秘不展示
+    bucketName: 隐秘不展示
 
 # swagger-ui custom path
 springdoc:
